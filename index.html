@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- Basic -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+
+	<title>Yangersi Stid Santos - Taller 01</title>	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+	<!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+
+	<!-- Add Firebase products that you want to use -->
+	<script src="https://kit.fontawesome.com/b6873bc2b9.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+	<!-- SCRIPTS NECESARIOS -->
+
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous">
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+	<!-- firebaseUI -->
+	<script src="https://cdn.firebase.com/libs/firebaseui/4.0.0/firebaseui.js"></script>
+
+	<script>
+
+var firebaseConfig = {
+    apiKey: "AIzaSyCQ4kELf2nAJWXnRNMcXQSgI6qFihWoB1s",
+    authDomain: "taller01-8665e.firebaseapp.com",
+    databaseURL: "https://taller01-8665e.firebaseio.com",
+    projectId: "taller01-8665e",
+    storageBucket: "taller01-8665e.appspot.com",
+    messagingSenderId: "756025982632",
+    appId: "1:756025982632:web:d8db0d93597454ac75cc9d",
+    measurementId: "G-84D5EGBWCF"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+	</script>
+
+	<!-- FIN DE SCRIPTS -->
+
+<section class="container shadow p-3 mb-5 text-white rounded mt-5"> 
+	<div class="container p-3 my-3 bg-dark text-white rounded mt-5 text-center">
+		<h1>TALLER 01 - FIREBASS </h1>
+		<p>Inicia sesion y administración de informacion con distintas redes sociales</p>
+	  </div>
+	
+	<div class="container mt-2 mb-5">
+		<div class="text-center">
+			
+			<button id="loginGoogle" class="btn btn-outline-danger">
+				<i class="fab fa-google"></i> Google			
+			</button>
+		</div>
+		
+		<div class="text-center mt-3">
+			<button id="loginTwitter" class="btn btn-outline-primary">
+				<i class="fab fa-twitter"></i> Twitter		
+			</button>
+		</div>
+
+		<div class="text-center mt-3">
+			<button id="loginFacebook" class="btn btn-outline-info">
+				<i class="fab fa-facebook-f"></i> Facebook		
+			</button>
+		</div>
+	</div>
+<HR></HR>
+<div class="text-center">
+	<h4>Informacion de la cuenta:</h4>
+</div>
+	
+<div id="root">
+	
+	<img id="avatar" src="" alt="">
+
+</div>
+
+</section>
+
+<footer class="text-center"><p class="font-weight-bold">Elaborado por: Yangersi Stid Santos</p></footer>
+
+<script src="app.js"></script>
+
+
+</body>
+
+</html>
